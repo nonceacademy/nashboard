@@ -2,7 +2,6 @@
   export async function load({ fetch }) {
     const response = await fetch("/api/data/get/all");
     const data = await response.json();
-
     return {
       status: response.status,
       props: {
@@ -96,7 +95,7 @@
       <div class="space-y-1 basis-1/2">
         <Activity networkActivity={data.utc} />
         <Pie kinds={data.kinds} />
-        <Relay relayData={data.relays} />
+        <!-- <Relay relayData={data.relays} /> -->
         <Month {monthlyData} />
         <Year {yearlyData} />
       </div>

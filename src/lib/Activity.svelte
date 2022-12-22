@@ -60,7 +60,7 @@
       {
         label: "AM",
         data: timeArrAM,
-        borderColor: "#fdba74",
+        borderColor: "#85011e",
         backgroundColor: "#fff7ed",
         lineTension: 0.4,
       },
@@ -83,7 +83,7 @@
           font: {
             size: 16,
           },
-          color: '#57534e'
+          color: "#ccc",
         },
       },
     },
@@ -95,7 +95,7 @@
           display: true,
           text: "Hours (UTC)",
           font: { size: 16 },
-          color: "#a8a29e",
+          color: "#fff",
         },
       },
       y: {
@@ -105,15 +105,16 @@
           display: true,
           text: "Event count",
           font: { size: 16 },
-          color: "#a8a29e",
+          color: "#fff",
         },
       },
     },
   };
 </script>
 
-<div class="p-5 border-2 border-orange-200 bg-white">
-  <span class="block text-center pb-3 text-lg text-orange-500 font-bold tracking-tighter"
+<div class="p-5 border-2 border-secondary bg-primary">
+  <span
+    class="block text-center pb-3 text-lg text-title font-bold tracking-tighter"
     >NETWORK ACTIVITY (24H)</span
   >
 

@@ -19,29 +19,30 @@
       {
         label: "Event types",
         data: [kind1, kind4, kindOthers],
-        backgroundColor: ["#FED7AA", "#A5F3FC", "#d6d3d1"],
+        backgroundColor: ["#ff423c", "#A5F3FC", "#d6d3d1"],
       },
     ],
   };
 
   const options = {
     animation: false,
-    layout: {padding: {left: 40, right: 40, bottom: 20}},
+    layout: { padding: { left: 40, right: 40, bottom: 20 } },
     plugins: {
       legend: {
         labels: {
           font: {
             size: 16,
           },
-          color: '#57534e'
+          color: "#ccc",
         },
       },
     },
   };
 </script>
 
-<div class="pt-5 xl:p-5 border-2 border-orange-200 bg-white">
-  <span class="block text-center mb-3 text-lg text-orange-500 font-bold tracking-tighter"
+<div class="pt-5 xl:p-5 border-2 border-secondary bg-primary">
+  <span
+    class="block text-center mb-3 text-lg text-title font-bold tracking-tighter"
     >EVENT KINDS (24H)</span
   >
   <Pie {data} {options} />

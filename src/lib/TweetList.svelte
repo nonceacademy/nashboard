@@ -27,11 +27,11 @@
   }
 </script>
 
-<div class="p-5 border-2 border-orange-200 bg-white xl:min-w-0 xl:basis-1/2">
+<div class="p-5 border-2 border-secondary bg-primary xl:min-w-0 xl:basis-1/2">
   <div class="flex items-center">
     <div class="flex-1" />
     <span
-      class="block text-center text-lg text-orange-500 font-bold tracking-tighter"
+      class="block text-center text-lg text-title font-bold tracking-tighter"
       >LATEST EVENTS</span
     >
     <div class="flex-1 flex">
@@ -44,7 +44,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 text-stone-500 hover:cursor-pointer hover:text-stone-700 transition"
+            class="w-6 h-6 text-message hover:cursor-pointer hover:text-gray-100 transition"
             on:click={getRecentEvents}
           >
             <path
@@ -106,7 +106,7 @@
   {/key}
 
   {#if fetching}
-    <div class="flex justify-center text-orange-500 py-5">
+    <div class="flex justify-center text-title py-5">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -128,7 +128,7 @@
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 h-6 animate-spin text-stone-700"
+        class="w-6 h-6 animate-spin text-gray-100"
       >
         <path stroke-linecap="round" d="M5 12h14" />
       </svg>
@@ -153,7 +153,7 @@
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 h-6 animate-spin text-stone-700"
+        class="w-6 h-6 animate-spin text-gray-100"
       >
         <path stroke-linecap="round" d="M5 12h14" />
       </svg>
@@ -187,7 +187,7 @@
           extended = !extended;
         }}
       >
-        <span class="text-stone-500 font-mono tracking-widest">more</span>
+        <span class="text-message font-mono tracking-widest">more</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"

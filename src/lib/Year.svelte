@@ -10,7 +10,7 @@
         backgroundColor: "#fff7ed",
         lineTension: 0.4,
         fill: true,
-        pointBackgroundColor: '#FB923C'
+        pointBackgroundColor: "#FB923C",
       },
     ],
   };
@@ -39,9 +39,9 @@
   };
 </script>
 
-<div class="p-5 border-2 border-orange-200 bg-white">
+<div class="p-5 border-2 border-secondary bg-primary">
   <span
-    class="block text-center pb-3 text-lg text-orange-500 font-bold tracking-tighter"
+    class="block text-center pb-3 text-lg text-title font-bold tracking-tighter"
     >TOTAL UNIQUE EVENTS (1YR)</span
   >
 

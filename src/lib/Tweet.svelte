@@ -13,7 +13,7 @@
     >
     <span class="text-stone-400">{format(time * 1000)}</span>
   </div>
-  <p class="break-words text-stone-500 mb-1">
+  <p class="break-words text-message mb-1">
     {message}
   </p>
   {#if foundIn}
@@ -36,7 +36,7 @@
           >
         {:else}
           <span
-            class="border mr-0.5 mb-0.5 border-stone-300 rounded-full px-1.5 text-stone-500"
+            class="border mr-0.5 mb-0.5 border-stone-300 rounded-full px-1.5 text-message"
             >{place}</span
           >
         {/if}

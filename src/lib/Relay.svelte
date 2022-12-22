@@ -26,8 +26,8 @@
   for (let i = 0; i < Math.min(sortedCutoff, sorted.length); i++) {
     relayList.push(sorted[i][0]); // cut the wss://
     relayCount.push(sorted[i][1]);
-    if (i == 0) backgrounds.push("#fdba74");
-    else if (i == 1) backgrounds.push("#FED7AA");
+    if (i == 0) backgrounds.push("#f86c66");
+    else if (i == 1) backgrounds.push("#A5F3FC");
     else if (i == 2) backgrounds.push("#e7e5e4");
     else backgrounds.push("#F5F5F4");
   }
@@ -75,9 +75,9 @@
   }
 </script>
 
-<div class="p-5 border-2 border-orange-200 bg-white">
+<div class="p-5 border-2 border-secondary bg-primary">
   <span
-    class="block text-center pb-3 text-lg text-orange-500 font-bold tracking-tighter"
+    class="block text-center pb-3 text-lg text-title font-bold tracking-tighter"
     >MOST CROWDED RELAYS (24H)</span
   >
   <Bar {data} {options} />
@@ -90,7 +90,7 @@
         <span>relay</span>
         <span>event count (24H)</span>
       </div>
-      <div class="flex flex-col text-stone-500">
+      <div class="flex flex-col text-message">
         {#each allSortedRelays as relay, i}
           <div
             class="flex justify-between"
@@ -123,7 +123,7 @@
         class="flex items-center space-x-1 hover:cursor-pointer"
         on:click={toggleExpand}
       >
-        <span class="text-stone-500 font-mono tracking-widest">more</span>
+        <span class="text-message font-mono tracking-widest">more</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
