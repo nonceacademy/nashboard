@@ -58,8 +58,9 @@ export async function get() {
 
   const monthlyData = _.countBy(events, "created_at");
   const monthlyDataRaw = JSON.stringify(monthlyData);
+  const upstashEndpoint = import.meta.env.VITE_UPSTASH_ENDPOINT;
   const upstashBearer = import.meta.env.VITE_UPSTASH_BEARER;
-  await fetch("https://global-fond-mastiff-31218.upstash.io/set/monthly_data", {
+  await fetch(upstashEndpoint + "/set/monthly_data", {
     headers: {
       Authorization: `Bearer ${upstashBearer}`
     },

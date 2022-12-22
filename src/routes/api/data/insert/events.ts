@@ -87,8 +87,9 @@ export async function get() {
   const body = { utc: UTCList, uniquePubkeys: uniquePubkeys, kinds: kindsList, relays: relayCount, eventCount: events.length, events: latestEvents, where: whereArray };
   const rawData = JSON.stringify(body);
 
+  const upstashEndpoint = import.meta.env.VITE_UPSTASH_ENDPOINT;
   const upstashBearer = import.meta.env.VITE_UPSTASH_BEARER;
-  await fetch("https://global-fond-mastiff-31218.upstash.io/set/event_body", {
+  await fetch(upstashEndpoint + "/set/event_body", {
     headers: {
       Authorization: `Bearer ${upstashBearer}`
     },

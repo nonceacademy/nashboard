@@ -1,6 +1,7 @@
 export async function get() {
+  const upstashEndpoint = import.meta.env.VITE_UPSTASH_ENDPOINT;
   const upstashBearer = import.meta.env.VITE_UPSTASH_BEARER;
-  const response = await fetch("https://global-fond-mastiff-31218.upstash.io/get/event_body", {
+  const response = await fetch(upstashEndpoint + "/get/event_body", {
     headers: {
       Authorization: `Bearer ${upstashBearer}`
     }
